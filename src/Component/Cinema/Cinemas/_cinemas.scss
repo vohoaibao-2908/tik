@@ -1,0 +1,40 @@
+.Listcinema {
+  border: 1px solid rgba(238, 238, 238, 0.88);
+  padding: 0;
+  width: 90px;
+  li {
+    list-style: none;
+    position: relative;
+    a {
+      width: 5.625em;
+      height: 5.625em;
+      padding: 5.625em;
+      display: block;
+      opacity: 0.4;
+      img {
+        width: 100%;
+      }
+    }
+    a:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: calc(100% - 40px);
+      transform: translateX(-50%);
+      border-bottom: 1px solid #fff;
+      border-color: rgba(238, 238, 238, 0.88);
+    }
+    a:hover {
+      opacity: 1;
+      border: none;
+    }
+    .active {
+      opacity: 1;
+    }
+  }
+}
+// responsive on mobile
+@media only screen and (max-width : 45em){
+    
+}

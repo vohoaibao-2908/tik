@@ -1,0 +1,32 @@
+.checkout{
+    .detailCheckout{
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 25%;
+        height: 100%;
+        box-shadow: 0 0 15px rgba(0,0,0,.3);
+        border-right: 1px solid ;
+        .total{
+            text-align: center;
+            color: #44c020;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .cinema{
+            .filmName{
+                margin: 20px 0 10px 10px;
+                display: block;
+                color: #fb4226;
+                font-size: 20px;
+                font-weight: 500;   
+            }
+            .contentCinema span{
+                display: block;
+                font-size: 14px;
+            }
+        }
+     
+    }
+}

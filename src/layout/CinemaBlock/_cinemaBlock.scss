@@ -1,0 +1,28 @@
+.cinemas {
+  padding-top: 120px;
+  background: url(../images/back-news.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  .homeCinemaComplex {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 540px;
+    width: 80%;
+    margin: auto;
+    border: 1.5px solid #aba4a4;
+    .cinema {
+      border-right: 1px solid #aba4a4;
+    }
+    .listCinemas {
+      overflow: auto;
+      grid-column: 2 / span 5;
+      padding: 20px 0 0 20px;
+      border-right: 1px solid #aba4a4;
+    }
+    .listMovies {
+      overflow: auto;
+      padding: 20px 0 0 20px;
+      grid-column: 7 / span 9;
+    }
+  }
+}

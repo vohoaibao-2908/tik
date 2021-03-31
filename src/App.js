@@ -1,25 +1,42 @@
-import logo from './logo.svg';
+import React, { Component } from "react";
+
+import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { homeRouter } from "./Router";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "swiper/swiper.scss";
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
+import pageNotFound from "./Pages/PageNotFound";
+
+class App extends Component{
+  renderRouter = (router) => {
+    if (router && router.length > 0) {
+      return router.map((item, index) => {
+        return (
+          <Route
+            key={index}
+            exact={item.exact}
+            path={item.path}
+            component={item.component}
+          />
+        );
+      });
+    }
+  };
+  render() {
+    return (
+      <BrowserRouter>
+        <Switch>
+          {this.renderRouter(homeRouter)}
+          <Route path="" component={pageNotFound} />
+        </Switch>
+      </BrowserRouter>
+    );
+  }
+
+  
 }
 
 export default App;

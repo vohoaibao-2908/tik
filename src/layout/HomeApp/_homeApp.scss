@@ -1,0 +1,36 @@
+#appBlock{
+    background-image: url(../images/backapp.jpg);
+    padding: 120px 0 80px 0;
+    background-size: contain;
+    .container{
+        width: 940px;
+        .row{
+            p.textLeft{
+                color: #fff;
+                font-size: xx-large;
+                font-weight: 700;
+            }
+            .textSmallLeft{
+                font-size: medium;
+                color: #fff;
+            }
+            .textAppUnder{
+                color: #fff;
+                padding-top: 10px;
+                .tagA{
+                    margin: 0 5px ;
+                    color: #fff;
+                    border-bottom: 1px solid #fff ;
+                }
+            }
+        }
+    }
+   
+    
+    img{
+        display: block;
+        width: 195px;
+        height: 422px;
+        margin: auto;
+    }
+}

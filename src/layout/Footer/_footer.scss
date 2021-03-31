@@ -1,0 +1,44 @@
+#footerBlock {
+  background-color: #222;
+  padding: 20px 0;
+  color: #fff;
+  .mainMaxWidth {
+    max-width: 940px;
+    float: none;
+    margin: auto;
+    .fontSizeA{
+      color: #949494;
+      display: block;
+      font-size: 16px !important;
+      font-weight: 700px;
+    }
+
+    .iconConnect {
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      margin-right: 15px;
+    }
+    .imgBoCo {
+      width: 130px;
+    }
+    .iconApp {
+      background: 0 0;
+      height: 30px;
+      width: auto;
+      margin: 5px;
+    }
+    .vngIcon {
+      border-radius: 8px;
+      width: 80px;
+      height: auto;
+    }
+    span {
+      display: block;
+      line-height: 1.8;
+      color: #949494;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}

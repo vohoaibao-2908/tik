@@ -1,0 +1,32 @@
+#list {
+  overflow-y: unset;
+  height: 100%;
+  .cinemaAddress{
+    opacity: 0.4;
+  }
+  .cinemaAddress:hover{
+    opacity: 1;
+  }
+  .cinemaList {
+    display: block;
+    text-decoration: none !important;
+    .nameCinema {
+      font-size: 14px;
+      color: #000;
+    }
+    .address {
+      font-size: 12px;
+      color: #949494;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .detailClick {
+    color: #fb4226 !important;
+    font-size: 12px;
+  }
+  .active{
+    opacity: 1;
+  }
+}

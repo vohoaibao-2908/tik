@@ -1,0 +1,22 @@
+@import "../Component/Header/Navbar/navbar";
+@import "../Component/Header/Login/login";
+
+@import "../Component/Header/SliderItem/sliderItem";
+@import "../Component/Header/Slider/_slider.scss";
+
+@import "../Component/Film/ShowingFilm/filmSlider";
+@import "../Component/Film/FilmItem/filmItem";
+
+@import "../layout/CinemaBlock/cinemaBlock";
+@import "../Component/Cinema/Cinemas/cinemas";
+@import "../Component/Cinema/ListCinemas/cinemaList";
+@import "../Component/Cinema/ListMovies/listMovie";
+
+@import "./NewsBlock/newsBlock";
+
+@import "../Component/Ticket/ticket";
+
+@import "./HomeApp/homeApp";
+
+@import "./Footer/footer";
+@import "../Component/Detail/detailMovie";

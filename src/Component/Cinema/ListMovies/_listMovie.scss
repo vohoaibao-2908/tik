@@ -1,0 +1,39 @@
+.movie {
+  padding: 10px;
+  padding-left: 20px;
+  height: 80px;
+  position: relative;
+  overflow: auto;
+  .movieImg {
+    width: 50px;
+    float: left;
+    height: 100%;
+    object-fit: cover;
+  }
+  .movieName {
+    .timeShow {
+      position: absolute;
+      top: 30%;
+      left: 15%;
+      overflow: hidden;
+      .timeChoose {
+        display: inline-block;
+        padding: 5px;
+        margin: 10px;
+        border: 1px solid rgba(107, 92, 92, 0.795);
+        border-radius: 5px;
+        color: #000000;
+        text-decoration: none;
+      }
+      .timeChoose:hover {
+        color: #fb4226;
+      }
+    }
+    p {
+      margin: 0;
+      position: absolute;
+      top: 13%;
+      left: 17%;
+    }
+  }
+}

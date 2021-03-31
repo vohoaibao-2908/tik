@@ -1,0 +1,44 @@
+.detailMovie {
+  .detailBackground {
+    position: relative;
+    background: linear-gradient(to right, black, transparent 160%);
+    height: 500px;
+    .detailImages {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      top: -45%;
+      overflow: hidden;
+      img {
+        filter: blur(9px);
+        width: 100%;
+      }
+    }
+    .detailGradient {
+      position: absolute;
+      height: 500px;
+      width: 100%;
+      background: linear-gradient(to top, rgb(10, 32, 41), transparent 100%);
+    }
+  }
+  .detailMain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: 75%;
+    transform: translate3d(-50%, -50%, 0);
+    .filmPoster{
+      .playTrailer{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .poster{
+        width: 100%;
+      }
+    }
+  }
+}

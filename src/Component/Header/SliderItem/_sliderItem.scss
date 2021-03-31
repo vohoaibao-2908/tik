@@ -1,0 +1,26 @@
+a {
+  cursor: pointer;
+}
+a:hover .playButton {
+  opacity: 1;
+  transition: all 0.2s;
+}
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: 0;
+  border: none;
+  opacity: 0;
+}
+a .playButton:hover {
+  opacity: 0.5;
+  background: 0;
+}
+@media (max-width: 46.25em) {
+  .playButton {
+    height: 50px;
+    width: 50px;
+  }
+}
